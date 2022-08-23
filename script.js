@@ -59,5 +59,5 @@ function delKey() {
     result.innerHTML = result.innerHTML.toString().slice(0,-1);
 }
 function eqlKey() {
-    result.innerHTML = eval(result.innerHTML)
+    result.innerHTML = eval(result.innerHTML);
 }
