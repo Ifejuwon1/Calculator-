@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-body{
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc{
+    border-radius: 20px;
+    width: 500px;
+    height: 550px;
+}
+
+.screen{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.761);
+    overflow-x: auto;
+    width: 450px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px auto 0px auto;
+}
+
+.inner-screen{
+    font-size: 50px;
+    float: right;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+.contain{
+    background-color: rgba(255, 255, 255, 0.754);
+    padding-top: 10px;
+    margin: auto;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px ;
+    border: 1px solid black;
+    justify-content: center;
+    height: 450px;
+}
+
+.button{
+    background-color: seashell;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.626) ;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button:last-child{
+    background-color: crimson;
+}
+
+.button:hover{
+    background-color: rgba(128, 128, 128, 0.526);
+}
+
+#eqls{
+  background-color: aqua;  
+  grid-row: span 3;
+  height: 250px;  
+}
+
+#eqls:hover{
+    background-color: rgba(128, 128, 128, 0.526);
+}
+
+@media screen and (max-width: 480px) {
+    .calc{
+        transform: scale(0.8);
+    }
+}
